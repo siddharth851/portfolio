@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+            border: 2px solid cyan;
+            background-color: black;
+            color: cyan;
+            padding: 20px;
+            width: 90%;
+            margin-left: 40px;
+            font-size: 20px;
+            box-shadow: 0 0 10px cyan;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: aqua;
+        }
+        .nav-bar a:hover{
+            color: red;
+        }
+        #message{
+            height: 100px;
+            width: 700px;
+            padding: 10px;
+            top: 5px;
+        }
+        #name{
+            width: 700px;
+            padding: 10px;
+        }
+        #email{
+            width: 700px;
+            padding: 10px;
+        }
+        .content{
+            color: white;
+        }
+        input{
+            border: none;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        #button{
+            border-radius: 5px;
+            border: none;
+            background-color: aqua;
+            margin-top: 10px;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .profile{
+            color: aqua;
+            cursor: pointer;
+        }
+        .mail{
+            cursor: pointer;
+        }
+        #home{
+            cursor: pointer;
+        }
+        #about{
+            cursor: pointer;
+        }
+        #skill{
+            cursor: pointer;
+        }
+        #work{
+            cursor: pointer;
+        }
+        #contact{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-bar">
+           <a href="home.html" target="_blank"><span id="home">Home</span></a>
+            <a href="about.html" target="_blank"><span>about</span></a>
+            <a href="skills.html" target="_blank"><span>Skill</span></a>
+            <a href="works.html" target="_blank"><span>Work</span></a>
+            <a href="contact.html" target="_blank"><span>Contact</span></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1>Contact Me 📩</h1>
+            <p>Lets connect! Whether you have a project idea or just want to say hi, I'dlove to hear from you</p>
+            <input type="text" placeholder="Your Name" id="name"><br><br>
+            <input type="email" placeholder="Your Email" id="email"><br><br>
+            <input type="text" placeholder="Your Message" id="message"><br>
+            <button id="button">Send Messsage</button><br><br>
+            <p class="mail">✉️ siddharthpwian@gmail.com</p>
+            <p class="profile">LinkedIn Profile</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Landing</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('netflix.jpg') no-repeat center center/cover;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .head {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    #netflix {
+      color: red;
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .button {
+      display: flex;
+      gap: 10px;
+    }
+
+    #sign {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button button {
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      height: 100vh;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .email-section {
+      margin-top: 20px;
+    }
+
+    .email-input {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .get-start {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="head">
+    <h1 id="netflix">Netflix</h1>
+    <div class="button">
+      <button>English</button>
+      <button id="sign">Sign in</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="content">
+      <h1>Unlimited Movies, TV</h1>
+      <h1>Shows and More.</h1>
+      <div>Watch anywhere. Cancel anytime.</div>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+      <div class="email-section">
+        <input type="email" placeholder="Email Address" class="email-input">
+        <button class="get-start">Get Started ></button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

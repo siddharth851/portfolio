@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-color: rgb(34, 35, 35);
+            color: white;
+        }
+        
+        .a{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .circle{
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background-color: blue;
+            background-image: url(image.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 40px cyan;
+            
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            gap: 90px;
+            
+        }
+        .mainpart{
+            border: 2px solid red;
+            width: 80%;
+            margin-left: 120px;
+            margin-top: 50px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+            opacity: 0;
+            animation: openBox 2.5s ease-in-out forwards;
+            animation-delay: 2s;
+            display: none;
+            transform: scale(0.9);
+            box-shadow: 0px 0px 5px rgb(255, 0, 0);
+        }
+        button{
+            border-radius: 5px;
+            background-color: rgb(32, 50, 212);
+            border: 1px;
+            font-size: 18px;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            margin-top: 45px;
+            font-size: 30px;
+        }
+        #linkedin:hover{
+            transform: scale(1.4);
+            color: #0077B5;
+        }
+        #instagram:hover{
+            transform: scale(1.4);
+            color: rgb(254, 218, 117);
+        }
+        #facebook:hover{
+            transform: scale(1.4);
+            color: #1877F2;
+        }
+        #telegram:hover{
+            transform: scale(1.4);
+            color: #0088CC;
+            
+        }
+        .contect:hover{
+            font-size: 20px;
+            background-color: aqua;
+            box-shadow: 0 0 10px aqua;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            font-size: 25px;
+            margin-top: 10px;
+            color: aliceblue;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(203, 182, 204);
+            
+        }
+        a:hover{
+            transform: scale(1.6);
+        }
+        .mail{
+            margin-top: 30px;
+            color: rgb(56, 255, 1);
+        }
+        #home, #about, #skill, #work, #hire {
+        color: aqua;
+        font-weight: bold;
+        }
+
+        .email{
+            color: rgb(44, 13, 139);
+        }
+        .b{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-direction: column;
+            font-size: 50px;
+        }
+        .loder{
+            height: 50px;
+            width: 500px;
+            border: 5px solid red;
+            border-radius: 30px;
+            box-shadow: none;
+        }
+        .bar{
+            width: 0%;
+            height: 100%;
+            border-radius: 25px;
+            background-color: aqua;
+            animation: line 5s linear infinite;
+        }
+        .circle:hover {
+        transform: scale(1.2) rotate(3deg);
+        transition: all 0.5s linear;
+        box-shadow: 0 0 20px cyan, 0 0 50px rgb(0, 8, 255);
+        }
+      .content{
+        font-size: 23px;
+      }
+      .mainpart:hover{
+        box-shadow: 0px 0px 20px red;
+      }
+      .contect{
+        background-color: rgb(31, 140, 190);
+      }
+      #home:hover, #about:hover, #skill:hover, #work:hover, #hire:hover {
+        color: rgb(17, 49, 145);
+      }
+        @keyframes line{
+            0%{
+                width: 0%;
+                opacity: 0;
+            }
+            100%{
+                width: 100%;
+                opacity: 1;
+            }
+        }
+        @keyframes openBox {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 80%; 
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="b">
+    <h2>Loading...</h2>
+    <div class="loder">
+        <div class="bar"></div>
+        </div>
+    </div>
+    <div class="mainpart">
+        <div class="header">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="about">About</a>
+            <a href="#" id="skill">Skills</a>
+            <a href="#" id="work">Works</a>
+            <a href="#" id="hire">Hire Me</a>
+        </div>
+    <div class="main">
+        <div class="content">
+        <h1>Hi,</h1>
+        <h1>I' am Siddharth</h1>
+        <h1>Web Designer</h1>
+        <button class="contect">View My Work</button><br>
+        <div class="icon">
+        <a href="https://www.linkedin.com/in/siddharth-gupta-0a26262a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin" id="linkedin"></i></a>
+        <a href="https://www.instagram.com/sidd.fitontop?igsh=eWhqbnNycHBzb2h3" target="_blank"><i class="bi bi-instagram" id="instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook" id="facebook"></i></a>
+        <a href="https://www.telegram.com" target="_blank"><i class="bi bi-telegram" id="telegram"></i></a><br>
+        
+         </div>
+        <div class="mail">
+        <div>Email: <a href ="mailto:siddharhpwian@gmail.com" target="_blank" >siddharhpwian@gmail.com</a>
+        </div>
+        </div>
+        </div>
+        <div class="circle"></div>
+    </div>
+    </div>
+    <script>
+  setTimeout(() => {
+    document.querySelector('.b').style.display = 'none'; 
+    const main = document.querySelector('.mainpart');
+    main.style.display = 'block';                       
+    main.style.animation = 'openBox 2.5s ease-in-out forwards'; 
+  }, 5000);
+</script>
+
+</body>
+</html>

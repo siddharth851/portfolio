@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+    .nav-bar{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+            border: 2px solid cyan;
+            background-color: black;
+            color: cyan;
+            padding: 20px;
+            width: 90%;
+            margin-left: 40px;
+            font-size: 20px;
+            box-shadow: 0 0 10px cyan;
+         }
+         h1{
+            color: cyan;
+            display: flex;
+            justify-content: center;
+            
+         }
+         .portfolio{
+            height: 190px;
+            width: 310px;
+            border: 2px solid cyan;
+            border-radius: 20px;
+            color: white;
+         }
+         .portfolio:hover{
+          transform: scale(1.05);
+          box-shadow: 0 0 30px cyan;
+          transition: linear;  
+            
+         }
+         .netflix{
+            height: 190px;
+            width: 310px;
+            border: 2px solid cyan;
+            border-radius: 30px;
+            color: white;
+         }
+         .netflix:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 30px cyan;
+            transition: linear;
+            
+         }
+         .shopping{
+            height: 190px;
+            width: 310px;
+            border: 2px solid cyan;
+            border-radius: 30px;
+            color: white;
+         }
+         .shopping:hover{
+           transform: scale(1.05);
+           box-shadow: 0 0 30px cyan;
+           transition: linear; 
+            
+         }
+         .main{
+            display: flex;
+            gap: 50px;
+           margin-left: 150px;
+           margin-top: 90px;
+           font-weight: bold;
+         }
+         #a{
+            padding-left: 20px;
+            padding-top: 20px;
+         }
+         #b{
+            padding-left: 20px;
+            padding-right: 10px;
+         }
+         #landing-page{
+           padding-left: 20px;
+            padding-top: 20px; 
+         }
+         #page{
+            padding-left: 20px;
+            padding-top: 10px;
+         }
+         #e-comerce{
+           padding-left: 20px;
+            padding-top: 20px;  
+         }
+         #web{
+           padding-left: 20px;
+            padding-top: 10px; 
+         }
+         .nav-bar a{
+            text-decoration: none;
+            color: aqua;
+         }
+         .nav-bar a:hover{
+            color: red;
+            transform: scale(1.2);
+         }
+         .netflix a{
+            text-decoration: none;
+            color: white;
+         }
+         .shopping a{
+
+            text-decoration: none;
+            color: white;
+         }
+            </style>
+      </head>
+   <body>
+    <div class="header">
+        <div class="nav-bar">
+            <a href="home.html" target="_blank"><span id="home">Home</span></a>
+            <a href="about.html" target="_blank"><span id="about">About</span></a>
+            <a href="skills.html" target="_blank"><span id="skill">Skill</span></a>
+            <a href="works.html" target="_blank"><span id="work">Work</span></a>
+          <a href="contact.html" target="_blank"><span id="contact">Contact</span></a>  
+        </div>
+    </div>
+    <h1>My Work & Projects</h1>
+    <div class="main">
+        <div class="portfolio">
+            <h2 id="a">Portfolio Website</h2>
+            <p id="b">A respomnsive website built using HTML,CSS to showcase my skill and project</p>
+        </div>
+        <div class="netflix">
+            <a href="netflix.html"><h2 id="landing-page">Netflix Landing Page</h2>
+            <p id="page">Unlimited movies, TV shows, and more.
+Watch anywhere. Cancel anytime.</p></a>
+        </div>
+        <div class="shopping">
+            <a href="e-commerce.html"><h2 id="e-comerce">E-commerce Landing Page</h2>
+            <p id="web">Shop smart, save big, and get everything delivered to your doorstep.</p></a>
+        </div>
+    </div>
+</body>
+</html>
